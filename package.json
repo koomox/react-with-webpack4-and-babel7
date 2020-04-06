@@ -2,7 +2,7 @@
   "name": "react-app",
   "version": "1.0.0",
   "description": "A React Project with Webpack 4 and Babel 7",
-  "main": "src/main.js",
+  "main": "src/index.jsx",
   "author": "koomox",
   "license": "GPL",
   "scripts": {
