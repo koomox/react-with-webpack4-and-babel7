@@ -17,6 +17,10 @@ update Dependencies
 ```sh
 yarn upgrade
 ```
+setting proxy           
+```sh
+yarn config set proxy socks5://127.0.0.1:1080
+```
 
 install Dependencies
 
