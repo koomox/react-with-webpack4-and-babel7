@@ -11,7 +11,7 @@ module.exports = {
   mode: "development",
   entry: {
     app: [
-      "./src/main.js",
+      "./src/index.jsx",
       "webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000"
     ]
   },
@@ -50,16 +50,13 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: {
-            loader: "style-loader!css-loader"
-        }
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
   plugins: [
     new webpack.ProgressPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new VueLoaderPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       chunks: "app",
