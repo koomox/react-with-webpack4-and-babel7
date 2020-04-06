@@ -1,7 +1,6 @@
 const { CleanWebpackPlugin } = require("clean-webpack-plugin"); // installed via npm
 const HtmlWebpackPlugin = require("html-webpack-plugin"); // installed via npm
 const webpack = require("webpack"); // to access built-in plugins
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const path = require("path");
 
 function resolve(dir) {
